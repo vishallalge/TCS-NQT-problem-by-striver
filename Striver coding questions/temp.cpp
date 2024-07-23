@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    int arr[] = {1, 2, 3, 4, 5};
-    int n = size(arr);
-    cout<<n;
+    int a = 4^8, b = 12^4;
+    cout<<a;
+    cout<<b; 
     return 0; 
 }
