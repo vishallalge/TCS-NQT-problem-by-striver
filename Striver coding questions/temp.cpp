@@ -1,8 +1,12 @@
+#include <iostream>
+#include <string>
 #include <bits/stdc++.h>
+
 using namespace std;
-int main(){
-    int a = 4^8, b = 12^4;
-    cout<<a;
-    cout<<b; 
-    return 0; 
+
+int main() {
+    string arr = "vishal";
+    size_t size = sizeof(arr) / sizeof(arr[0]);  // Include null terminator
+    std::cout << "Size of char array (including null terminator): " << arr.size() << std::endl;
+    return 0;
 }
