@@ -44,3 +44,27 @@ int main(){
     replaceByItsRank2(arr, n);
     return 0;
 }
+
+
+
+// leetcode problem link: https://leetcode.com/problems/rank-transform-of-an-array/description/
+class Solution {
+public:
+    vector<int> arrayRankTransform(vector<int>& arr) {   
+        map<int, vector<int>> mp;
+        int temp = 1;
+        for(int i = 0; i<arr.size(); i++){
+            mp[arr[i]].push_back(i);
+        }
+        vector<int> v;
+        for(auto it = mp.begin(); it!=mp.end();it++){
+            v = it->second;
+            int idx;
+            for(int i = 0; i<v.size();i++){
+                arr[v[i]] = temp;
+            }
+            temp++;
+        }
+        return arr;
+    }
+};
