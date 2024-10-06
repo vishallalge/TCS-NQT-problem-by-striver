@@ -1,12 +1,11 @@
-#include <iostream>
-#include <string>
 #include <bits/stdc++.h>
 
 using namespace std;
 
 int main() {
-    string arr = "vishal";
-    size_t size = sizeof(arr) / sizeof(arr[0]);  // Include null terminator
-    std::cout << "Size of char array (including null terminator): " << arr.size() << std::endl;
+    int num = pow(2, 23);
+    int deno = pow(3, 2);
+   int result = num % deno;
+   cout<<result;
     return 0;
 }
