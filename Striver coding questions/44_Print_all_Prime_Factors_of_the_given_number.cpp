@@ -69,7 +69,7 @@ vector<int> primeFactor3(int n){
 }
 
 int main(){
-    int n = 60;
+    int n = 60; 
 
     vector<int> primeFactor1 = primeFactors1(n);
     for(auto factor: primeFactor1){

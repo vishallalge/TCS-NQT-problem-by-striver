@@ -31,6 +31,9 @@ bool isPrime2(int num){
 
 int main(){
     int num = 13;
+
+    // largest primr number:- 170141183460469231731687303715884105727
+
     if(isPrime1(num)) cout<<"this number is prime"<<endl;
     else cout<<"this number is not prime";
 
